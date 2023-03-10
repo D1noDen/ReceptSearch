@@ -3,7 +3,7 @@
 
 
 const Modal = ({img , idigrients , setOpen}) => {
-    console.log(idigrients)
+ 
     return(
          <div className="fixed flex items-center justify-center top-0 bottom-0  z-10  w-screen h-screen" style={{background:'rgba(18,15,16,0.2)'}}>
             
