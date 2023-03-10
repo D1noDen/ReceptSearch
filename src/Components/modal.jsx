@@ -10,7 +10,7 @@ const Modal = ({img , idigrients , setOpen}) => {
             <div className="bg-white flex flex-col items-center  justify-center lg:py-5 "  >
                 
                 
-            <div className="flex flex-col  items-center justify-center lg:flex-row">
+            <div className="flex flex-col  items-center justify-center 2xl:flex-row">
 
            
                 <div>
@@ -19,12 +19,12 @@ const Modal = ({img , idigrients , setOpen}) => {
             <div>
                 {idigrients.map(item => (
                     <div key={item} className="w-96 px-10  ">
-                    <p className="lg:pt-6 text-xs lg:text-lg">{item}</p><br/>
+                    <p className="2xl:pt-6 text-xs 2xl:text-lg">{item}</p><br/>
                     </div>
                 ))}
             </div>
             </div>
-          <button className='bg-gray-700 text-white  lg:text-xl  px-6 lg:py-6 my-6 lg:w-96 rounded-xl' onClick={() => setOpen(false)}>Close</button>
+          <button className='bg-gray-700 text-white  2xl:text-xl  px-6 2xl:py-6 my-6 2xl:w-96 rounded-xl' onClick={() => setOpen(false)}>Close</button>
             </div>
             
         </div>
