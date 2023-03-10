@@ -7,14 +7,14 @@ const Modal = ({img , idigrients , setOpen}) => {
     return(
          <div className="fixed flex items-center justify-center top-0 bottom-0  z-10  w-screen h-screen" style={{background:'rgba(18,15,16,0.2)'}}>
             
-            <div className="bg-white flex flex-col items-center justify-center lg:py-5 "  >
+            <div className="bg-white flex flex-col items-center  justify-center lg:py-5 "  >
                 
                 
-            <div className="flex flex-col items-center justify-center lg:flex-row">
+            <div className="flex flex-col  items-center justify-center lg:flex-row">
 
            
                 <div>
-                <img src={img} className="lg:pt-10 lg:px-10 " alt='food'/>
+                <img src={img} className="w-36 lg:pt-10 lg:px-10 lg:w-auto " alt='food'/>
             </div>
             <div>
                 {idigrients.map(item => (
@@ -24,7 +24,7 @@ const Modal = ({img , idigrients , setOpen}) => {
                 ))}
             </div>
             </div>
-          <button className='bg-gray-700 text-white text-xl  py-6 my-6 w-96 rounded-xl' onClick={() => setOpen(false)}>Close</button>
+          <button className='bg-gray-700 text-white lg:text-xl pt-2 px-6 lg:py-6 my-6 lg:w-96 rounded-xl' onClick={() => setOpen(false)}>Close</button>
             </div>
             
         </div>
