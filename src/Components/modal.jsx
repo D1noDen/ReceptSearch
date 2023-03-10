@@ -18,13 +18,13 @@ const Modal = ({img , idigrients , setOpen}) => {
             </div>
             <div>
                 {idigrients.map(item => (
-                    <div key={item} className="w-96 px-10">
-                    <p className="pt-6 lg:text-lg">{item}</p><br/>
+                    <div key={item} className="w-96 px-10  ">
+                    <p className="lg:pt-6 text-xs lg:text-lg">{item}</p><br/>
                     </div>
                 ))}
             </div>
             </div>
-          <button className='bg-gray-700 text-white lg:text-xl pt-2 px-6 lg:py-6 my-6 lg:w-96 rounded-xl' onClick={() => setOpen(false)}>Close</button>
+          <button className='bg-gray-700 text-white  lg:text-xl  px-6 lg:py-6 my-6 lg:w-96 rounded-xl' onClick={() => setOpen(false)}>Close</button>
             </div>
             
         </div>
